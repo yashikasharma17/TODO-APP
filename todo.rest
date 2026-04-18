@@ -1,0 +1,53 @@
+### get 
+GET http://localhost:8484
+
+### post for auth register
+
+POST http://localhost:8484/auth/register
+Content-Type: application/json
+
+{
+    "username":"minho@gmail.com",
+    "password":"123123"
+}
+
+### post for auth register
+
+POST http://localhost:8484/auth/login
+Content-Type: application/json
+
+{
+    "username":"minho@gmail.com",
+    "password":"123123"
+}
+
+### get todo
+GET http://localhost:8484/todos
+Authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzc2MTc3Nzc0LCJleHAiOjE3NzYyNjQxNzR9.j0a_kEUwvlA1l-R5ijaaTsIz1WoQqr0ebrJkoisLzKA
+
+
+
+### post todo
+POST http://localhost:8484/todos
+Authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzc2MTc3Nzc0LCJleHAiOjE3NzYyNjQxNzR9.j0a_kEUwvlA1l-R5ijaaTsIz1WoQqr0ebrJkoisLzKA
+Content-Type:application/json
+
+{
+    "task":"complete hw"
+
+}
+
+### post todo
+PUT http://localhost:8484/todos/2
+Authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzc2MTc3Nzc0LCJleHAiOjE3NzYyNjQxNzR9.j0a_kEUwvlA1l-R5ijaaTsIz1WoQqr0ebrJkoisLzKA
+Content-Type: application/json
+
+{
+    "completed":1
+}
+
+### post todo
+DELETE http://localhost:8484/todos/2
+Authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzc2MTc3Nzc0LCJleHAiOjE3NzYyNjQxNzR9.j0a_kEUwvlA1l-R5ijaaTsIz1WoQqr0ebrJkoisLzKA
+
+
